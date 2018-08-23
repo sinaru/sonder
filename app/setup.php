@@ -90,6 +90,19 @@ add_action('widgets_init', function () {
         'name'          => __('Footer', 'sage'),
         'id'            => 'sidebar-footer'
     ] + $config);
+
+    register_sidebar([
+        'name'          => __('Main Right', 'sage'),
+        'id'            => 'main-right',
+    ] + $config);
+    register_sidebar([
+        'name'          => __('Footer Left', 'sage'),
+        'id'            => 'footer-left',
+    ]);
+    register_sidebar([
+        'name'          => __('Footer Right', 'sage'),
+        'id'            => 'footer-right',
+    ] + $config);
 });
 
 /**

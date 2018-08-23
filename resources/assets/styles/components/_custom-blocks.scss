@@ -1,0 +1,24 @@
+// -- icons with left margin
+// ex:
+//  <div class="contact-block">
+//   <div class="row">
+//    <div class="icon fa fa-map-marker"></div>
+//    <div class="text"> Some Text</div>
+//   </div>
+//  </div>
+.contact-block .icon {
+  float: left;
+  width: 30px;
+  padding-top: 3px;
+}
+
+.contact-block .text {
+  float: left;
+}
+
+.contact-block .row {
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+// end -- icons with left margin

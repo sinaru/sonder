@@ -5,3 +5,86 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+// custom
+
+header {
+  padding-top: $header-padding-top;
+}
+
+$socialIconBackColor: $brandSecondaryColor;
+$socialIconBackColorHover: lighten($brandSecondaryColor, 10%);
+.site-header {
+  padding-top: $header-padding-top;
+
+  a.header-logo-link {
+    color: $gray-darker;
+    text-decoration: none;
+  }
+  a.header-logo-link:hover {
+    color: lighten($gray-darker, 15%);
+  }
+
+  .logo {
+    min-height: 80px;
+
+    .site-title {
+      font-weight: bold;
+      font-size: 40px;
+    }
+  }
+
+  .description {
+    color: $gray;
+    font-size: 0.8em;
+  }
+
+  .contact-section {
+    text-align: right;
+    margin-bottom:5px;
+
+    .contact-bar {
+      font-size: 0.9em;
+      color: $socialIconBackColor;
+
+      .contact-item {
+        padding-left: 4px;
+      }
+    }
+    .social-bar {
+      .social-icon {
+        color: $brandContrastColor;
+        background-color: $socialIconBackColor;
+        border-radius: 50%;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        padding-left: 0;
+        text-align: center;
+        margin: 6px 0 0 5px;
+        text-decoration: none;
+      }
+
+      .social-icon:hover {
+        background-color: $socialIconBackColorHover;
+      }
+    }
+
+  }
+
+  //  nav bar
+  .nav {
+    .menu-item {
+      font-family: $secondary-font-family;
+      text-transform: uppercase;
+      font-size: 1.3em;
+    }
+
+  }
+}
+
+.site-header.with-site-background {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px $gray-darker solid;
+  margin-bottom: 15px;
+}
