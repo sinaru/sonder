@@ -99,5 +99,9 @@ add_filter('sage/template/app/data', function ($data) {
         'sf_placeholder' => esc_attr_x('Search &hellip;', 'placeholder', 'sage'),
         'sf_current_query' => get_search_query(),
         'sf_submit_text' => esc_attr_x('Search', 'submit button', 'sage'),
-    ];
+        'sf_logo_url' => esc_url(get_theme_mod('logo')),
+        'sf_name' => bloginfo('name'),
+        'sf_github_url' => get_theme_mod('github_url'),
+        'sf_linkedin_url' => get_theme_mod('linked_url'),
+      ];
 });
