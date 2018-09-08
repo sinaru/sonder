@@ -1,0 +1,15 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+main {
+  color: $gray-darker;
+}
+
+// Handle iframe and video elements not to take more than the width of their containers
+embed, iframe, object, video {
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  vertical-align: middle;
+}

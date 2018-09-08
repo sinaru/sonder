@@ -1,0 +1,8 @@
+.page-header {
+  .breadcrumb-wrapper {
+    .breadcrumb > li + li::before {
+      //the default value is reformatted. So changed here.
+      content: " / ";
+    }
+  }
+}
