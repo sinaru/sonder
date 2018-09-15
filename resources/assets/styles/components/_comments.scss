@@ -1,5 +1,16 @@
 .comment-list {
   @extend .list-unstyled;
+  .comment {
+    padding-top: 15px;
+  }
+
+  .comment-reply-link {
+    @extend .btn;
+    @extend .btn-secondary;
+
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
 }
 
 .comment-list ol {
