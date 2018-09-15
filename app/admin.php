@@ -17,7 +17,7 @@ add_action('customize_register', function (\WP_Customize_Manager $wp_customize) 
 
   // logo section
   $wp_customize->add_section('logo_section', array(
-    'title' => __('Logo', 'sonder'),
+    'title' => __('Logo', 'sage'),
     'priority' => 30,
     'description' => 'Upload a logo to replace the default site name and description in the header',
   ));
@@ -27,14 +27,14 @@ add_action('customize_register', function (\WP_Customize_Manager $wp_customize) 
     'sanitize_callback' => 'esc_url_raw',
   ]);
 //  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'logo', array(
-//    'label' => __('Logo', 'sonder'),
+//    'label' => __('Logo', 'sage'),
 //    'section' => 'logo_section',
 //    'settings' => 'logo',
 //  )));
 
   //-- contact details section
   $wp_customize->add_section('contact_details_section', array(
-    'title' => __('Contact Details', 'sonder'),
+    'title' => __('Contact Details', 'sage'),
     'priority' => 40,
   ));
   // phone number
@@ -167,7 +167,7 @@ add_action('customize_register', function (\WP_Customize_Manager $wp_customize) 
 
   //-- copyright section section
   $wp_customize->add_section('copyright_section', array(
-    'title' => __('Copyright Text', 'sonder'),
+    'title' => __('Copyright Text', 'sage'),
     'priority' => 50,
     'description' => 'Copyright text displayed bottom of page.'
   ));
@@ -186,7 +186,7 @@ add_action('customize_register', function (\WP_Customize_Manager $wp_customize) 
 
   //-- analytics section
   $wp_customize->add_section('analytics_codes_section', array(
-    'title' => __('Google Analytics', 'sonder'),
+    'title' => __('Google Analytics', 'sage'),
     'priority' => 50,
     'description' => 'Analytics Code'
   ));
