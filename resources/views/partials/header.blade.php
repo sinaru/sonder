@@ -4,7 +4,7 @@
       <div class="col-xs-12 col-sm-3 col-md-2">
         <div class="col-xs-12 col-sm-12 no-l-padding">
           <div class="logo">
-            <a class="header-logo-link" href="{{ get_bloginfo('name') }}" rel="home">
+            <a class="header-logo-link" href="{{ $sf_action }}" rel="home">
               <span class='site-title'>{{ get_bloginfo('name')  }}</span>
             </a>
           </div>
