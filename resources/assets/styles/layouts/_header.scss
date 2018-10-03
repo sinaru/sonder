@@ -26,17 +26,17 @@ $socialIconBackColorHover: lighten($brandSecondaryColor, 10%);
   }
 
   .logo {
-    min-height: 80px;
+    min-height: 4rem;
 
     .site-title {
       font-weight: bold;
-      font-size: 40px;
+      font-size: 3rem;
     }
   }
 
   .description {
     color: $gray;
-    font-size: 0.4em;
+    font-size: 0.8rem;
   }
 
   .contact-section {
@@ -72,8 +72,7 @@ $socialIconBackColorHover: lighten($brandSecondaryColor, 10%);
 
   }
 
-  //  nav bar
-  .nav {
+  .navbar {
     .menu-item {
       font-family: $secondary-font-family;
       text-transform: uppercase;
